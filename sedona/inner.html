@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style-mini.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <title>Holet in Sedona</title>
+</head>
+
+<body>
+  <div class="container">
+  <header>
+
+    <nav>
+      <ul class="main-menu">
+        <li><a href="#">Информация</a></li>
+        <li><a href="#">Фото и видео</a></li>
+        <li><a href="#">Карта штата</a></li>
+        <li ><a class="active" href="inner.html">Гостиницы</a></li>
+      </ul>
+      <div class="logo">
+        <a href="#"><img src="img/header_logo.png"  width="138" height="70" alt="logo"></a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="selection">
+    <form class="#" action="https://echo.htmlacademy.ru" method="get">
+      <div class="infrastructure">
+        <h2>Инфраструктура:</h2>
+        <ul>
+          <li>
+            <input type="checkbox" name="pool" id="checkbox1" checked>
+            <label for="checkbox1">Бассейн</label>
+          </li>
+          <li>
+            <input type="checkbox" name="parking" id="checkbox2">
+            <label for="checkbox2">Парковка</label>
+          </li>
+          <li>
+            <input type="checkbox" name="wi-fi" id="checkbox3" disabled>
+            <label for="checkbox3">WI-FI</label>
+          </li>
+        </ul>
+      </div>
+      <div class="property-type">
+        <h2>Тип жилья:</h2>
+        <ul>
+          <li>
+            <input type="checkbox" name="hotel" id="checkbox4" checked>
+            <label for="checkbox4">Гостиница</label>
+          </li>
+          <li>
+            <input type="checkbox" name="motel" id="checkbox5">
+            <label for="checkbox5">Мотель</label>
+          </li>
+          <li>
+            <input type="checkbox" name="apartment" id="checkbox6" disabled checked >
+            <label for="checkbox6">Апартаменты</label>
+          </li>
+        </ul>
+      </div>
+      <div class="cost-per-day">
+        <div class="cost-per-day-title">Стоимость в сутки (Р):</div>
+        <div class="price-controls">
+          <label for="minimum-price" class="min-price">от <input id="minimum-price" type="text" name="min-price" value="0"></label>
+          <label for="maximum-price" class="max-price">до <input id="maximum-price" type="text" name="max-price" value="3000"></label>
+        </div>
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar"></div>
+          </div>
+          <div class="range-toggle range-toggle-min"></div>
+          <div class="range-toggle range-toggle-max"></div>
+        </div>
+        <button class="accept" type="submit">Показать</button>
+      </div>
+     </form>
+  </section>
+
+  <section class="selection-result-menu">
+    <div class="found">
+      <h3>Найдено: 3</h3>
+    </div>
+    <div class="sort">
+      <span>Сортировка:</span>
+      <ul class="sort-list">
+        <li><a class="active" href="#">По цене</a></li>
+        <li><a href="#">По типу</a></li>
+        <li><a href="#">По рейтингу</a></li>
+      </ul>
+    </div>
+    <div class="sorting-up-down">
+      <ul class="sort-triangle">
+        <li><a class="up" href="#"></a></li>
+        <li><a  class="active down" href="#"></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <article class="result">
+    <div class="picture">
+      <img src="img/amara_resort.jpg" width="135" height="90" alt="amara">
+    </div>
+    <div class="result-name">
+      <h1><a href="#">Amara Resort &amp; SPA</a></h1>
+      <div class="more">
+        <span>Гостиница </span>
+        <a href="#">Подробнее</a>
+      </div>
+      <div class="reserve">
+        <span>От 3500 Р.</span>
+        <a href="#">Забронировать</a>
+      </div>
+
+    </div>
+    <div class="rating">
+      <ul class="stars">
+        <li><img src="img/icons/star.png" alt="star"></li>
+        <li><img src="img/icons/star.png" alt="star"></li>
+        <li><img src="img/icons/star.png" alt="star"></li>
+        <li><img src="img/icons/star.png" alt="star"></li>
+      </ul>
+      <span> Рейтинг: 8.5</span>
+    </div>
+  </article>
+
+  <article class="result">
+    <div class="picture">
+      <img src="img/desert_quail.jpg" width="135" height="90" alt="desert">
+    </div>
+    <div class="result-name">
+      <h1><a href="#">Desert quail inn</a></h1>
+      <div class="more">
+        <span>Мотель</span>
+        <a href="#">Подробнее</a>
+      </div>
+      <div class="reserve">
+        <span>От 2000 Р.</span>
+        <a href="#">Забронировать</a>
+      </div>
+
+    </div>
+    <div class="rating">
+      <ul class="stars">
+        <li><img src="img/icons/star.png" alt="star"></li> <!-- Звезды -->
+        <li><img src="img/icons/star.png" alt="star"></li> <!-- Звезды -->
+      </ul>
+      <span> Рейтинг: 8.9</span>
+    </div>
+  </article>
+
+  <article class="result underline">
+    <div class="picture">
+      <img src="img/villas.jpg" width="135" height="90" alt="villa">
+    </div>
+    <div class="result-name">
+      <h1><a href="#">Villas at poco diablo</a></h1>
+      <div class="more">
+        <span>Апартаменты</span>
+        <a href="#">Подробнее</a>
+      </div>
+      <div class="reserve">
+        <span>От 4000 Р.</span>
+        <a href="#">Забронировать</a>
+      </div>
+
+    </div>
+    <div class="rating">
+      <ul class="stars">
+        <li><img src="img/icons/star.png" alt="star"></li>
+        <li><img src="img/icons/star.png" alt="star"></li>
+        <li><img src="img/icons/star.png" alt="star"></li>
+      </ul>
+      <span> Рейтинг: 9.2</span>
+    </div>
+  </article>
+
+  <footer>
+    <div class="hashtag">
+      <a href="#">#Visitsedona</a>
+    </div>
+    <div class="social">
+      <a href="#" class="social-btn social-btn-facebook"></a>
+      <a href="#" class="social-btn social-btn-twitter"></a>
+      <a href="#" class="social-btn social-btn-youtube"></a>
+    </div>
+    <div class="footer-logo">
+      <a href="#"><span>Website by</span></a>
+      <a href="#" class="academylogo"></a>
+    </div>
+  </footer>
+
+
+</div>
+
+</body>
+
+</html>
